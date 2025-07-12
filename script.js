@@ -10,6 +10,9 @@ let newArr2 = [];
 		for(let i=0;i<newArr.length;i++){
 			newArr2.push(newArr[i]*2);
 		}
+
+let res1;
+let res2;
 			
 async function oneSD(){
 const res1 = await new Promise(resolve => setTimeout(()=>resolve(newArr),1000));
