@@ -19,5 +19,4 @@ const res1 = await new Promise(resolve => setTimeout(()=>resolve(newArr),1000));
    console.log(res2);
 }
 
-
-oneSD();
+document.getElementById("output").appendChild(res1,res2)
