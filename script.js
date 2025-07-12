@@ -15,10 +15,10 @@ let res1;
 let res2;
 			
 async function oneSD(){
-const res1 = await new Promise(resolve => setTimeout(()=>resolve(newArr),1000));
+ res1 = await new Promise(resolve => setTimeout(()=>resolve(newArr),1000));
 	console.log(res1);
 	
-   const res2 = await new Promise(resolve => setTimeout(()=> resolve(newArr2),2000));
+ res2 = await new Promise(resolve => setTimeout(()=> resolve(newArr2),2000));
    console.log(res2);
 }
 
