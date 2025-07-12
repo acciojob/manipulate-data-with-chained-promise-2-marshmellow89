@@ -22,4 +22,5 @@ async function oneSD(){
    console.log(res2);
 }
 
+oneSD();
 document.getElementById("output").appendChild(res1,res2)
