@@ -38,7 +38,7 @@ const divTag = document.querySelector("#output");
  await new Promise(resolve => { setTimeout(() => {
 	const arr2 = arr.filter(num => num%2==0);
 	divTag.textContent = arr2.toString();
-	 resolve();
+	 resolve(arr2);
 },1000);
 	
 });
