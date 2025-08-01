@@ -38,7 +38,7 @@ const divTag = document.querySelector("#output");
  const arr2 = await new Promise(resolve => { setTimeout(() => {
 	const evens = arr.filter(num => num%2==0);
 	divTag.textContent = evens.toString();
-	 resolve();
+	 resolve(evens);
 },1000);
 	
 });
@@ -46,7 +46,7 @@ const divTag = document.querySelector("#output");
 
 	
 	await new Promise(resolve => {setTimeout(() => {
-		arr3 = arr2.map(num => num*2);
+		const arr3 = arr2.map(num => num*2);
 		divTag.textContent = arr3.toString();
 		 resolve();
 	},2000);
