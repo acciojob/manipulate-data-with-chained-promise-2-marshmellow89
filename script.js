@@ -35,10 +35,10 @@ async function arrfilter(){
 
 	
 const divTag = document.querySelector("#output");
- await new Promise(resolve => { setTimeout(() => {
-	const arr2 = arr.filter(num => num%2==0);
-	divTag.textContent = arr2.toString();
-	 resolve(arr2);
+ const arr2 = await new Promise(resolve => { setTimeout(() => {
+	const evens = arr.filter(num => num%2==0);
+	divTag.textContent = evens.toString();
+	 resolve();
 },1000);
 	
 });
