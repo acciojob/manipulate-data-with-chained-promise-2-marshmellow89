@@ -38,14 +38,18 @@ const divTag = document.querySelector("#output");
  await new Promise(resolve => { setTimeout(() => {
 	const arr2 = arr.filter(num = num%2==0);
 	divTag.textContent = arr2.toString();
+	 resolve();
 },1000);
 	
 });
 
-arr3 = arr2.map(num => num*2);
-	divTag.innerText ="";
+
+	
 	await New Promise(resolve => {setTimeout(() => {
+		divTag.innerText ="";
+		arr3 = arr2.map(num => num*2);
 		divTag.textContent = arr3.toString;
+		 resolve();
 	},2000);
 })
 };
