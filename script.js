@@ -26,23 +26,28 @@
 // document.getElementById("output").appendChild(res1,res2)
 
 
-let arr = [1,2,3,4];
+
 async function arrfilter(){
- await new Promise(resolve => setTimeout(() => {
-	 const NewArr = arr.filter(num => num%2==0);
+ const arr = await new Promise(resolve => setTimeout(() => {
+	resolve([1,2,3,4]);
  },3000));
 
+
+	
 const divTag = document.querySelector("#output");
-await new Promise(resolve => { setTimeout(() => {
-	divTag.appendChild(NewArr);
-}1000);
+ await new Promise(resolve => { setTimeout(() => {
+	const arr2 = arr.filter(num = num%2==0);
+	divTag.textContent = arr2.toString();
+},1000);
 	
 });
 
-NewArr2 = NewArr.map(num => num*2);
+arr3 = arr2.map(num => num*2);
 	divTag.innerText ="";
 	await New Promise(resolve => {setTimeout(() => {
-		divTag.appendChild(NewArr2);
-	}2000);
+		divTag.textContent = arr3.toString;
+	},2000);
 })
 };
+
+arrfilter();
