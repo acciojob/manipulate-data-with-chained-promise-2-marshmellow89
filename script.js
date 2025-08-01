@@ -46,7 +46,6 @@ const divTag = document.querySelector("#output");
 
 	
 	await new Promise(resolve => {setTimeout(() => {
-		divTag.innerText ="";
 		arr3 = arr2.map(num => num*2);
 		divTag.textContent = arr3.toString();
 		 resolve();
