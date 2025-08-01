@@ -36,7 +36,7 @@ async function arrfilter(){
 	
 const divTag = document.querySelector("#output");
  await new Promise(resolve => { setTimeout(() => {
-	const arr2 = arr.filter(num = num%2==0);
+	const arr2 = arr.filter(num => num%2==0);
 	divTag.textContent = arr2.toString();
 	 resolve();
 },1000);
@@ -45,10 +45,10 @@ const divTag = document.querySelector("#output");
 
 
 	
-	await New Promise(resolve => {setTimeout(() => {
+	await new Promise(resolve => {setTimeout(() => {
 		divTag.innerText ="";
 		arr3 = arr2.map(num => num*2);
-		divTag.textContent = arr3.toString;
+		divTag.textContent = arr3.toString();
 		 resolve();
 	},2000);
 })
